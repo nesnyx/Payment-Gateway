@@ -6,7 +6,7 @@ router = APIRouter()
 templates = Jinja2Templates(directory="templates")
 
 
-stripe.api_key = "sk_test_51Ns4UrLFjtCoG6X7bMYImKXrpSdxLBWVTzOFEslrFIdmkzOY1up6uAfp0VNsUxebmwzHT9A9VdWbd37tjcbLgqKb008TCS0SLA"
+stripe.api_key = "YOUR API KEY"
 @router.get("/")
 async def index(request : Request):
     return templates.TemplateResponse("index.html", {
