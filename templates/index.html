@@ -1,0 +1,18 @@
+{% extends "components/base.html" %}
+
+{% block content %}
+    <h2>Action Figure Store</h2>
+    
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{ url_for('static', path='img/1.png') }}" width="400" alt="">
+            <h6>Rp 500.000,-</h6>
+            </div>
+        </div>
+    
+    <!-- Use action="/create-checkout-session.php" if your server is PHP based. -->
+    <form action="/create-checkout-session" method="POST">
+        
+        <button class="btn btn-primary" type="submit">Checkout</button>
+    </form>
+{% endblock content %}
